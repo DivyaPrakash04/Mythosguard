@@ -1,0 +1,91 @@
+wandb: Detected [agents] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai
+[W&B] Experiment tracking active -> https://wandb.ai/divyaprakash_26/mythosguard-arena/runs/536k5day
+=== Strategy: source_code ===
+Findings:
+ - D:\SundaiHackMITTheEngine\Mythosguard\sample_vulnerable_code\vuln.py:6 eval -> return eval(user_input)
+ - D:\SundaiHackMITTheEngine\Mythosguard\sample_vulnerable_code\vuln.py:8 hardcoded_password -> password = "hunter2"  # hardcoded password (intentional vuln)
+
+Patch:
+--- a/sample_vulnerable_code\vuln.py
++++ b/sample_vulnerable_code\vuln.py
+@@ -3,6 +3,6 @@
+
+
+ def compute(user_input):
+
+     # insecure: uses eval on user input
+
+-    return eval(user_input)
+
++    return ast.literal_eval(user_input)
+
+
+
+ password = "hunter2"  # hardcoded password (intentional vuln)
+
+
+Verification:
+ - passed: True
+ - post_findings: [{'type': 'hardcoded_password', 'line': 8, 'line_text': 'password = "hunter2"  # hardcoded password (intentional vuln)', 'file_path': 'C:\\Users\\praka\\AppData\\Local\\Temp\\tmpqw1sti06\\vuln.py'}]
+ - git_check_ok: False
+ - applied_via_git: False
+=== Strategy: source_code ===
+Findings:
+ - D:\SundaiHackMITTheEngine\Mythosguard\sample_vulnerable_code\vuln.py:6 eval -> return eval(user_input)
+ - D:\SundaiHackMITTheEngine\Mythosguard\sample_vulnerable_code\vuln.py:8 hardcoded_password -> password = "hunter2"  # hardcoded password (intentional vuln)
+
+Patch:
+--- a/sample_vulnerable_code\vuln.py
++++ b/sample_vulnerable_code\vuln.py
+@@ -3,6 +3,6 @@
+
+
+ def compute(user_input):
+
+     # insecure: uses eval on user input
+
+-    return eval(user_input)
+
++    return ast.literal_eval(user_input)
+
+
+
+ password = "hunter2"  # hardcoded password (intentional vuln)
+
+
+Verification:
+ - passed: True
+ - post_findings: [{'type': 'hardcoded_password', 'line': 8, 'line_text': 'password = "hunter2"  # hardcoded password (intentional vuln)', 'file_path': 'C:\\Users\\praka\\AppData\\Local\\Temp\\tmphizv3095\\vuln.py'}]
+ - git_check_ok: False
+ - applied_via_git: False
+=== Strategy: source_code ===
+Findings:
+ - D:\SundaiHackMITTheEngine\Mythosguard\sample_vulnerable_code\vuln.py:6 eval -> return eval(user_input)
+ - D:\SundaiHackMITTheEngine\Mythosguard\sample_vulnerable_code\vuln.py:8 hardcoded_password -> password = "hunter2"  # hardcoded password (intentional vuln)
+
+Patch:
+--- a/sample_vulnerable_code\vuln.py
++++ b/sample_vulnerable_code\vuln.py
+@@ -3,6 +3,6 @@
+
+
+ def compute(user_input):
+
+     # insecure: uses eval on user input
+
+-    return eval(user_input)
+
++    return ast.literal_eval(user_input)
+
+
+
+ password = "hunter2"  # hardcoded password (intentional vuln)
+
+
+Verification:
+ - passed: True
+ - post_findings: [{'type': 'hardcoded_password', 'line': 8, 'line_text': 'password = "hunter2"  # hardcoded password (intentional vuln)', 'file_path': 'C:\\Users\\praka\\AppData\\Local\\Temp\\tmpca7ew8p7\\vuln.py'}]
+ - git_check_ok: False
+ - applied_via_git: False

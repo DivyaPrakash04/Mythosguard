@@ -1,0 +1,51 @@
+_wandb:
+    value:
+        cli_version: 0.27.0
+        e:
+            04ks4mvwt9v5y7ard5je4saxntqi0nho:
+                args:
+                    - --clean
+                    - --wandb
+                codePath: demo.py
+                codePathLocal: demo.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "204010942464"
+                        used: "142671892480"
+                email: sudarsan.prakash91@gmail.com
+                executable: C:\Python313\python.exe
+                host: DP_Latitude7400
+                memory:
+                    total: "16981118976"
+                os: Windows-11-10.0.26200-SP0
+                program: D:\SundaiHackMITTheEngine\Mythosguard\demo.py
+                python: CPython 3.13.5
+                root: D:\SundaiHackMITTheEngine\Mythosguard
+                startedAt: "2026-05-31T22:17:48.882996Z"
+                writerId: 04ks4mvwt9v5y7ard5je4saxntqi0nho
+        m: []
+        python_version: 3.13.5
+        t:
+            "3":
+                - 2
+                - 13
+                - 16
+                - 61
+                - 62
+            "4": 3.13.5
+            "5": 0.27.0
+            "8":
+                - 3
+            "10":
+                - 20
+            "12": 0.27.0
+            "13": windows-amd64
+initial_weights:
+    value:
+        source_code: 1
+provider:
+    value: mock
+provider_seed:
+    value: 42

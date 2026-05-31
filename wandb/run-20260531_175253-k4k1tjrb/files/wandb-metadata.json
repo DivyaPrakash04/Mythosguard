@@ -1,0 +1,28 @@
+{
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "CPython 3.13.5",
+  "startedAt": "2026-05-31T21:52:53.769831Z",
+  "args": [
+    "--clean",
+    "--wandb"
+  ],
+  "program": "D:\\SundaiHackMITTheEngine\\Mythosguard\\demo.py",
+  "codePath": "demo.py",
+  "codePathLocal": "demo.py",
+  "email": "sudarsan.prakash91@gmail.com",
+  "root": "D:\\SundaiHackMITTheEngine\\Mythosguard",
+  "host": "DP_Latitude7400",
+  "executable": "C:\\Python313\\python.exe",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "204010942464",
+      "used": "142671048704"
+    }
+  },
+  "memory": {
+    "total": "16981118976"
+  },
+  "writerId": "6sg1cfvpcxsuat4zs4wo4frkryuucloa"
+}
